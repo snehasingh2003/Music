@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(music.jpg);
+        }
+        h1{
+            font-family: 'Babylonica', cursive;
+            color: deeppink;
+            background-color: black;
+            text-align: center;
+        }
+        .navbar{
+            background-color: grey;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 14px 20px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: black;
+        }
+        .dropbtn{
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            min-width: 160px;            
+        }
+
+        .content a{
+        display: block;
+        text-decoration: none;
+    }
+
+    .navbar li ul.dropdown li{
+        
+        display: block;
+    }
+    .navbar li ul.dropdown {
+        
+        display: block;
+    }
+    .navbar li a:hover{
+        background: pink;
+    }
+    .navbar li:hover ul .dropdown{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <h1> <marquee behavior="scrolling" width="90%" hight=" 50%" direction="right"><B>MUSIC</B></marquee></h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Song</a></li>
+                <li> <a href="#">Karaoke</a>
+                    <li class="dropdown"><button class="dropbtn">karaaoke</button>
+                    <ul class="content">
+                        <li id="1"><a href="#">Duet</a></li>
+                        <li id="1"><a href="#">solo</a></li>
+                    </ul></li>                     
+                <li> <a href="#">Class</a></li>
+                <li> <a href="#">Practice</a></li>
+                <li> <a href="#">Dance</a></li>
+                <li> <a href="#">Duet</a></li>
+                <li><a href="#">Intrument</a></li>
+                <li><a href="#"></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
